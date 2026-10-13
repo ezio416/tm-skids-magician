@@ -267,7 +267,7 @@ void UpdateWhilePlaying() {
         }
         return;
     }
-    if (playerNbRespawnRequests != player.Score.NbRespawnsRequested) {
+    if (playerNbRespawnRequests != int(player.Score.NbRespawnsRequested)) {
         playerNbRespawnRequests = player.Score.NbRespawnsRequested;
         if (S_ClearSkidsOnRespawn) {
             trace('Clear skids on respawn');
